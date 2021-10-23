@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Упражнения: Блок 2 задания 1-9</title>
+</head>
+
+<body>
+    <figure>
+        <form action="#">
+            <fieldset>
+                <h3>Задание 1</h3>
+                <fieldset>
+                    <label for="">Чекбокс
+    <input type="chekbox">
+    <input type="chekbox" disabled>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <label for="">Файл
+        <input type="file">
+        <label for="" >Файл отключен
+            <input type="file" disabled>
+    </label></fieldset>
+                <fieldset>
+                    <label for="" style="text-transform:uppercase">The choice is yours<br>
+        <input type="image" src="img/red.png" width="50" alt="red" title="мучительная правда реальности">
+        <input type="image" src="img/blue.png" width="50" alt="blue" disabled title="блаженная неизвестность иллюзии">
+    </label></fieldset>
+                <fieldset>
+                    <label for="">Пароль
+        <input type="password">
+        <input type="password" disabled>
+    </label></fieldset>
+                <fieldset>
+                    <label for="">Текст
+        <input type="text">
+        <input type="text" disabled>
+    </label></fieldset>
+                <fieldset>
+                    <label for="">Email
+        <input type="email">
+        <input type="email" disabled>
+    </label></fieldset>
+                <fieldset>
+                    <label for="">Дата
+        <input type="date">
+        <input type="date" disabled>
+    </label></fieldset>
+            </fieldset>
+            <figure>
+                <fieldset>
+                    <h3>Задание 2</h3>
+                    <fieldset>
+                        <button type="reset">Сбросить</button>
+                    </fieldset>
+                    <fieldset>
+                        <label for="">
+                    Отправить <input type="submit">
+                </label>
+
+                        <!---button удобнее для стилизации.-->
+                    </fieldset>
+                </fieldset>
+            </figure>
+            <figure>
+                <fieldset>
+                    <h3>Задание 3</h3>
+                    <fieldset>
+                        <label>Выбрать число
+                            <input type="radio" name="number" id="num_one" value="1">
+                            <label for="num_one">1</label>
+                        <input type="radio" name="number" id="num_two" value="2">
+                        <label for="num_two">2</label>
+                        <input type="radio" name="number" id="num_three" value="3">
+                        <label for="num_three">3</label>
+                        </label>
+                    </fieldset>
+                </fieldset>
+            </figure>
+            <figure>
+                <fieldset>
+                    <h3>Задание 4</h3>
+                    <fieldset>
+                        <label>Введите текст сообщения
+                            <textarea name="" id="" cols="30" rows="3" maxlength="100" style="resize: none;"></textarea>
+                        </label>
+                    </fieldset>
+                </fieldset>
+            </figure>
+            <figure>
+                <fieldset>
+                    <h3>Задание 5</h3>
+                    <fieldset>
+                        <label>Введите текст сообщения
+                            <textarea name="" id="" cols="30" rows="3" maxlength="100"></textarea>
+                        </label>
+                    </fieldset>
+                </fieldset>
+            </figure>
+            <figure>
+                <fieldset>
+                    <h3>Задание 6</h3>
+                    <fieldset>
+                        <label>Выбрать одно число
+                            <figure>
+                            <select name="select_a" id="select_a" style="width: 250px;">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </figure>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <label>Выбрать одно или несколько чисел
+                            <figure>
+                            <select name="select_b" id="select_b" multiple style="width: 250px;">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                            </select></figure>
+                        </label>
+                    </fieldset>
+                    <figure>
+                        <fieldset>
+                            <h3>Задание 7</h3>
+                            <figure>
+                                <fieldset>
+                                    <label><a href="#text_area" style="text-decoration:none; color: black">Введите текст сообщения</a>
+                                    <textarea name="" id="text_area" cols="30" rows="3" maxlength="100" style="resize: none;"></textarea>
+                                </label>
+                                </fieldset>
+                            </figure>
+                            <figure>
+                                <fieldset>
+                                    <label>
+                                        <label for="text_area_second" style="cursor: pointer;">Введите текст</label>
+                                    <textarea name="" id="text_area_second" cols="30" rows="3" maxlength="100" style="resize: none"></textarea>
+                                    </label>
+                                </fieldset>
+                            </figure>
+                        </fieldset>
+                    </figure>
+                </fieldset>
+            </figure>
+        </form>
+    </figure>
+    <figure>
+        <form action="#">
+            <figure>
+                <fieldset>
+                    <h3>Задания 8-9</h3>
+                    <fieldset>
+                        <legend>Форма с legend</legend>
+                        <label>Введите email
+                                <input type="email" tabindex="3">
+                        </label>
+                        <label>Введите пароль
+                            <input type="password" name="" id="" tabindex="2">
+                        </label>
+                        <label>
+                            <button type="submit" tabindex="1">Отправить</button>
+                        </label>
+                    </fieldset>
+                </fieldset>
+            </figure>
+        </form>
+    </figure>
+</body>
+
+</html>
