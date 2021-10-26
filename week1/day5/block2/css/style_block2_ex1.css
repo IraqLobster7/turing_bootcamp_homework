@@ -1,0 +1,17 @@
+.menu {
+    display: grid;
+    grid-template-rows: 4fr;
+    grid-template-columns: 5fr;
+    grid-gap: 0.5vw;
+    align-items: baseline;
+    justify-items: left;
+    margin-top: 25px;
+    width: 450px;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    border-top: 2px solid rgb(182, 182, 182);
+    border-left: 2px solid rgb(182, 182, 182);
+    border-radius: 3px;
+    padding: 20px;
+    box-shadow: 3px 3px rgba(3, 3, 3, 0.5), -3px -3px rgba(182, 182, 182, 0.5);
+}
