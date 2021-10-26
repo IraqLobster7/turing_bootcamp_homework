@@ -1,0 +1,8 @@
+.gradient {
+    width: 200px;
+    height: 200px;
+    margin-top: 25px;
+    border: 5px solid transparent;
+    border-image: linear-gradient(to top, rgba(216, 11, 223, 0.801), rgba(47, 15, 134, 0.767));
+    border-image-slice: 1;
+}
