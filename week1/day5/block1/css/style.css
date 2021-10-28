@@ -325,39 +325,20 @@ legend {
     width: 250px;
     height: 150px;
     margin: 50px;
-<<<<<<< Updated upstream
-    padding: 0;
-    display: grid;
-    grid-template-columns: 1;
-    grid-template-rows: 2;
-=======
     display: grid;
     grid-template-columns: 1;
     grid-template-rows: 3;
->>>>>>> Stashed changes
     background-color: white;
     border: solid 2px black;
 }
 
 .russia .russia_blue {
-<<<<<<< Updated upstream
-    align-self: flex-end;
-    width: 100%;
-    margin: 0;
-    height: 50px;
-=======
     width: 100%;
     height: 100%;
->>>>>>> Stashed changes
     background-color: blue;
 }
 
 .russia .russia_red {
-<<<<<<< Updated upstream
-    align-self: flex-end;
-    margin: 0;
-=======
->>>>>>> Stashed changes
     width: 100%;
     height: 100%;
     background-color: red;
