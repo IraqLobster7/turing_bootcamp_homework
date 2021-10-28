@@ -11,7 +11,11 @@
     text-align: center;
     line-height: 35px;
     vertical-align: baseline;
+<<<<<<< Updated upstream
     border-radius: 0px 25px 25px 0px;
+=======
+    border-radius: 0px 25px 25px;
+>>>>>>> Stashed changes
     border-right: 1px solid black;
     padding-right: 10px;
     box-shadow: -37px 4px 36px -33px white inset;
