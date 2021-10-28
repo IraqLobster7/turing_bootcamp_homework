@@ -1,0 +1,345 @@
+/* Упражнение 1 */
+
+.circle {
+    width: 80px;
+    height: 80px;
+    border-style: double;
+    border-color: black;
+    background-color: #70FBFD;
+    border-radius: 50%;
+    border-width: 7px;
+    margin-top: 25px;
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    border-style: solid;
+    border-color: red;
+    background-color: blue;
+}
+
+
+/* Упражнение 2 */
+
+table {
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+th {
+    color: white;
+    background-color: #001cf5;
+    height: 65px;
+    width: 100px;
+    font-weight: 600;
+    border: solid 2px black;
+}
+
+td {
+    color: black;
+    background-color: #f4a83b;
+    height: 65px;
+    width: 100px;
+    font-weight: 500;
+    text-align: center;
+    border: solid 1px black;
+}
+
+.th_first {
+    border-radius: 25px 0 0 0;
+}
+
+.th_last {
+    border-radius: 0 25px 0 0;
+}
+
+#td_first {
+    border-radius: 0 0 0 25px;
+}
+
+#td_last {
+    border-radius: 0 0 25px 0;
+}
+
+
+/* Упражнение 3 */
+
+.formula {
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+}
+
+.small_text {
+    font-size: 15px;
+}
+
+.upper {
+    vertical-align: super;
+    color: red;
+}
+
+.under {
+    vertical-align: sub;
+    color: blue;
+}
+
+
+/* Упражнение 4 */
+
+header {
+    background-color: #993430;
+}
+
+.links {
+    display: inline-block;
+    position: relative;
+    width: auto;
+    margin: 0;
+    padding: 25px 0 25px 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    font-style: italic;
+}
+
+.link_one {
+    color: #e03324;
+}
+
+.link_two {
+    color: #8df74c;
+}
+
+.link_three {
+    color: #72eeef;
+}
+
+
+/* Упражнение 5 */
+
+.round {
+    margin: 155px;
+    border-radius: 50%;
+    width: 700px;
+    height: 700px;
+    background-color: greenyellow;
+    background-image: linear-gradient( to left, transparent 50%, rgb(18, 230, 159) 0);
+}
+
+.round_sec {
+    border-radius: 50%;
+    width: 700px;
+    height: 700px;
+    background-image: linear-gradient( to bottom, transparent 50%, rgb(226, 27, 183) 0);
+    transform: rotate(120deg);
+}
+
+
+/* Упражнение 6 */
+
+.form_test {
+    background: #f5f5f5;
+    margin: 25px;
+    padding-bottom: 25px;
+    border: 3px solid #ebebeb;
+    color: #564650;
+}
+
+.form_test {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    width: 880px;
+}
+
+legend {
+    display: block;
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 15px;
+    border-bottom: 3px solid #ebebeb;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.form_test .header_form {
+    margin: 0;
+    height: 30px;
+    margin-left: 23px;
+    text-align: right;
+    width: 23%;
+}
+
+.form_test label {
+    display: flex;
+    margin: 25px;
+}
+
+.form_test label span {
+    display: inline-block;
+    width: 23%;
+    text-align: right;
+    margin: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.form_test label input {
+    display: inline-block;
+    width: 50%;
+    margin: 0;
+    height: 30px;
+    align-self: center;
+    margin-left: 15px;
+    border-radius: 5px;
+    border-color: #ebebeb;
+}
+
+.form_test .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form_test .buttons button {
+    margin: 5px;
+    height: 35px;
+    border-radius: 5px;
+    border-color: #eeeeee;
+}
+
+.form_test .buttons button[type=submit] {
+    color: white;
+    background-color: #0087cc;
+}
+
+
+/* Упражнение 7 */
+
+.dropdown__dropbtn {
+    border: none;
+    background: none;
+    color: blue;
+    text-decoration: underline;
+    font-size: 18px;
+    padding: 10px 20px 0px 20px;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown__content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown__content a {
+    color: blue;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    margin: 10px;
+}
+
+.dropdown__content_custom a {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: underline;
+    font-size: 21px;
+}
+
+.dropdown__content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown__content {
+    display: block;
+    border-radius: 0 5px 5px 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 0px 2px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover .dropdown__dropbtn {
+    background-color: #f1f1f1;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px 5px 0px 0px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 0px 2px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown__content a:hover {
+    color: white;
+    background-color: #37abff;
+}
+
+.dropdown__content_custom a:hover {
+    color: white;
+    background-color: blue;
+}
+
+
+/* Упражнение 8 */
+
+.dropdown__dropbtn_round {
+    border: solid 1px black;
+    border-radius: 25px;
+}
+
+.dropdown__content_round a {
+    border: solid 1px black;
+    border-radius: 25px;
+}
+
+
+/* Упражнение 9 */
+
+.japan {
+    width: 250px;
+    height: 150px;
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: solid 2px black;
+}
+
+.japan .japan_round {
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    border-radius: 100%;
+}
+
+.russia {
+    width: 250px;
+    height: 150px;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 3;
+    background-color: white;
+    border: solid 2px black;
+}
+
+.russia .russia_blue {
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+}
+
+.russia .russia_red {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}

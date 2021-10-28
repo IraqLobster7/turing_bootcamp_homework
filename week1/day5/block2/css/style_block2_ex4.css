@@ -1,0 +1,22 @@
+.menu {
+    background-image: linear-gradient( white, #b8c88d);
+    width: 50%;
+    border-radius: 0px 25px 25px 0px;
+}
+
+.menu_item {
+    display: inline-block;
+    height: 35px;
+    margin: 0px 10px;
+    text-align: center;
+    line-height: 35px;
+    vertical-align: baseline;
+<<<<<<< Updated upstream
+    border-radius: 0px 25px 25px 0px;
+=======
+    border-radius: 0px 25px 25px;
+>>>>>>> Stashed changes
+    border-right: 1px solid black;
+    padding-right: 10px;
+    box-shadow: -37px 4px 36px -33px white inset;
+}

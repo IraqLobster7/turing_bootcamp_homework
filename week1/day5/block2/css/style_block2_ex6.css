@@ -1,0 +1,19 @@
+a {
+    color: -internal-light-dark(black, white);
+    text-indent: 0px;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: #efefef;
+    margin: 0em;
+    padding: 1px 6px;
+    border: solid rgba(0, 0, 0, 0.473);
+    border-width: 1px;
+    border-radius: 2.5pt;
+}
+
+a:hover {
+    background-color: rgb(187, 194, 202);
+}
