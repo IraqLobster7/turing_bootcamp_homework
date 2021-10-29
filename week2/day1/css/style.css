@@ -240,3 +240,150 @@ input[type=radio]:checked+label::after {
 
 
 /* Упражнение 16 */
+
+.ex16__scroll {
+    display: inline-block;
+    overflow-y: scroll;
+    width: 100px;
+    height: 200px;
+    margin-bottom: 80px;
+}
+
+.ex16__scroll__inside {
+    height: 500px;
+}
+
+.ex16__scroll::-webkit-scrollbar {
+    width: 12px;
+    background-color: #f4f4f4;
+    border: 1px solid #dddddd;
+}
+
+.ex16__scroll::-webkit-scrollbar-thumb {
+    height: 80%;
+}
+
+.ex16__scroll_red::-webkit-scrollbar {
+    border-radius: 10px;
+}
+
+.ex16__scroll_red::-webkit-scrollbar-thumb {
+    background-color: red;
+    border-radius: 10px;
+}
+
+.ex16__scroll_blackthin::-webkit-scrollbar {
+    width: 6px;
+    background-color: rgb(207, 205, 205);
+    border: 1px solid rgb(207, 205, 205);
+}
+
+.ex16__scroll_blackthin::-webkit-scrollbar-thumb {
+    background-color: black;
+}
+
+.ex16__scroll_oceanblue::-webkit-scrollbar {
+    background-color: white;
+    border: 1px solid rgb(207, 205, 205);
+}
+
+.ex16__scroll_oceanblue::-webkit-scrollbar-thumb {
+    background: linear-gradient(#33baf1 50%, #00abed 50%);
+}
+
+.ex16__scroll_orange::-webkit-scrollbar {
+    background-color: white;
+    border: 1px solid rgb(207, 205, 205);
+}
+
+.ex16__scroll_orange::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #fe9900 25%, #fd6602 25%, #fd6602 50%, #fe9900 50%, #fe9900 75%, #fd6602 75%);
+}
+
+.ex16__scroll_bluegrad::-webkit-scrollbar {
+    background-color: white;
+    border: 1px solid rgb(207, 205, 205);
+    border-radius: 10px;
+}
+
+.ex16__scroll_bluegrad::-webkit-scrollbar-thumb {
+    background: linear-gradient(#1c3994 2%, #7b98d6);
+    border-radius: 10px;
+}
+
+.ex16__scroll_black::-webkit-scrollbar {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.ex16__scroll_black::-webkit-scrollbar-thumb {
+    background-color: black;
+}
+
+.ex16__scroll_orangegrad::-webkit-scrollbar {
+    background-color: white;
+    border: 1px solid rgb(207, 205, 205);
+    box-shadow: 0px 0px 3px 2px rgba(142, 168, 188, 0.2);
+}
+
+.ex16__scroll_orangegrad::-webkit-scrollbar-thumb {
+    background: linear-gradient( #ffad34 25%, #fe9900 25%, #fe9900 50%, #ffad34 50%, #ffad34 75%, #fe9900 75%);
+}
+
+.ex16__scroll_grey::-webkit-scrollbar {
+    background-color: white;
+    border: 1px solid rgb(207, 205, 205);
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 2px rgba(142, 168, 188, 0.2);
+}
+
+.ex16__scroll_grey::-webkit-scrollbar-thumb {
+    background: linear-gradient( #aaaaaa 25%, #888888 25%, #888888 50%, #aaaaaa 50%, #aaaaaa 75%, #888888 75%);
+    border-radius: 10px;
+}
+
+.ex16__scroll_bluevert::-webkit-scrollbar {
+    background-color: white;
+    border: 1px solid rgb(207, 205, 205);
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 2px rgba(142, 168, 188, 0.2);
+}
+
+.ex16__scroll_bluevert::-webkit-scrollbar-thumb {
+    background: repeating-linear-gradient( to left, blue 50%, rgb(93, 176, 231));
+    border-radius: 10px;
+}
+
+.ex16__scroll_blood::-webkit-scrollbar {
+    background-color: rgb(150, 146, 146);
+    border: 1px solid rgb(46, 42, 42);
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 2px rgba(142, 168, 188, 0.2);
+}
+
+.ex16__scroll_blood::-webkit-scrollbar-thumb {
+    background: radial-gradient(rgb(63, 7, 7) 5%, red);
+    border-radius: 10px;
+}
+
+.ex16__scroll_greygrad::-webkit-scrollbar {
+    background-color: white;
+    border: 1px solid rgb(207, 205, 205);
+    box-shadow: 0px 0px 3px 2px rgba(142, 168, 188, 0.2);
+}
+
+.ex16__scroll_greygrad::-webkit-scrollbar-thumb {
+    background: linear-gradient(white 5%, black);
+}
+
+.ex16__scroll_green::-webkit-scrollbar {
+    background-color: white;
+    border-radius: 10px;
+    /* border: 1px solid rgb(207, 205, 205); */
+    box-shadow: 0px 0px 3px 2px rgba(142, 168, 188, 0.2) inset;
+}
+
+.ex16__scroll_green::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: radial-gradient(rgb(49, 247, 82) 5%, rgb(2, 163, 88));
+}
