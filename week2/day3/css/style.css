@@ -5,3 +5,112 @@ h3 {
 
 
 /* Упражнение 1 */
+
+.ex1__container {
+    height: 500px;
+    width: 100vw;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+.ex1__container__item {
+    display: inherit;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+}
+
+
+/* Упражнение 2 */
+
+.ex2__container {
+    height: 200px;
+    width: 400px;
+    display: flex;
+    background-color: black;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ex2__container__item {
+    display: inherit;
+    flex: 1 0 auto;
+    margin: 5px;
+    height: 50px;
+    background-color: red;
+}
+
+.ex2__container__item:last-child {
+    flex: 2 0 auto;
+}
+
+
+/* Упражнение 3 */
+
+.ex3__container {
+    height: 200px;
+    width: 100vw;
+    display: flex;
+    background-color: black;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ex3__container__item {
+    display: inherit;
+    flex: 1 0 auto;
+    margin: 5px;
+    height: 50px;
+    background-color: red;
+}
+
+.ex3__container__item:nth-child(2) {
+    flex: 0.5 0 auto;
+}
+
+
+/* Упражнение 4 */
+
+.ex4 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    color: #000000;
+}
+
+.ex4__container {
+    width: 100vw;
+    display: flex;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ex4__container__item {
+    display: inherit;
+    margin: 25px;
+    height: 200px;
+    width: 250px;
+    background: #C4C4C4;
+    justify-content: center;
+}
+
+.ex4__container__item .item__image {
+    background: #DDDDDD;
+    text-align: center;
+    font-size: 12px;
+}
+
+.ex4__container__item .item__text {
+    background: #DDDDDD;
+    font-family: Roboto;
+    font-size: 8px;
+}
+
+.ex4__container__item .item__btn {
+    background: #BB0000;
+    font-size: 8px;
+}
