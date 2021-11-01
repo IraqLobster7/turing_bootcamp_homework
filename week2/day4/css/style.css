@@ -1,0 +1,172 @@
+h3 {
+    font-weight: 600;
+    margin: 15px;
+}
+
+
+/* Упражнение 1 */
+
+.ex1__container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 2vw;
+    align-content: center;
+    justify-content: center;
+}
+
+.ex1__container__item {
+    background: #C4C4C4;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    padding: 17px 29px;
+    justify-items: center;
+    align-items: center;
+}
+
+.item__image {
+    width: 189px;
+    margin: 5px;
+    height: 120px;
+    background: #DDDDDD;
+    text-align: center;
+    line-height: 120px;
+    font-size: 12px;
+}
+
+.item__text {
+    width: 139px;
+    height: 12px;
+    margin: 5px;
+    background: #DDDDDD;
+    line-height: 12px;
+    font-size: 8px;
+}
+
+.item__btn {
+    width: 189px;
+    height: 14px;
+    margin: 5px;
+    background: #BB0000;
+    line-height: 14px;
+    font-size: 8px;
+}
+
+
+/* Упражнение 2 */
+
+.ex2__header {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-gap: 2vw;
+    align-content: center;
+    justify-items: center;
+    background: #f2f2f2;
+}
+
+.ex2__header div,
+.ex2__header ul {
+    margin: 4%;
+}
+
+.header__menu {
+    padding-right: 5%;
+    width: 100%;
+    grid-column: span 3;
+    display: grid;
+    grid-gap: 2%;
+    justify-items: center;
+    align-items: center;
+    justify-content: end;
+    grid-auto-flow: column;
+}
+
+.header__menu li {
+    display: grid;
+}
+
+.ex2__header .header__menu li a {
+    text-decoration: none;
+    color: #5a5a5a;
+}
+
+.ex2__header .header__btn {
+    width: 80%;
+    height: 80%;
+}
+
+.ex2__header .header__logo {
+    height: 80%;
+    width: 80%;
+}
+
+.ex2__header .header__logo img {
+    height: 100%;
+    width: 100%;
+}
+
+.ex2__header .header__btn button {
+    color: #fff;
+    padding: 0;
+    align-self: center;
+    background: #407fe6;
+    border: none;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Упражнение 3 */
+
+.ex3__container {
+    display: grid;
+    width: 40%;
+    height: 200px;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    grid-gap: 5%;
+    /* justify-items: center;
+    align-items: center;
+    justify-content: center; */
+    background: #f2f2f2;
+}
+
+.ex3__container div {
+    border: 1px solid black;
+    background: tomato;
+}
+
+.ex3__container__item:first-child {
+    grid-column: span 2;
+    width: 100%;
+    height: 100%;
+}
+
+.ex3__container__item:nth-child(2) {
+    grid-column: span 0.3;
+    width: 100%;
+    height: 100%;
+}
+
+.ex3__container__item:nth-child(3) {
+    grid-column: span 1;
+    width: 100%;
+    height: 100%;
+}
+
+.ex3__container__item:nth-child(4) {
+    grid-column: span 3;
+    width: 100%;
+    height: 100%;
+}
+
+.ex3__container__item:nth-child(5) {
+    grid-row: span 2;
+    width: 100%;
+    height: 100%;
+}
+
+.ex3__container__item:last-child {
+    grid-column: span 3;
+    width: 100%;
+}
