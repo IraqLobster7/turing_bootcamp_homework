@@ -68,8 +68,16 @@ h3 {
 
 /* Упражнение 4 */
 
+.ex__text_one::-moz-selection {
+    background-color: blue;
+}
+
 .ex__text_one::selection {
     background-color: blue;
+}
+
+.ex__text_two::-moz-selection {
+    background-color: red;
 }
 
 .ex__text_two::selection {
@@ -81,6 +89,30 @@ h3 {
 
 .ex5__input {
     margin: 15px;
+}
+
+.ex5__input::-webkit-input-placeholder {
+    background-color: whitesmoke;
+    color: blue;
+    text-align: center;
+}
+
+.ex5__input::-moz-placeholder {
+    background-color: whitesmoke;
+    color: blue;
+    text-align: center;
+}
+
+.ex5__input:-ms-input-placeholder {
+    background-color: whitesmoke;
+    color: blue;
+    text-align: center;
+}
+
+.ex5__input::-ms-input-placeholder {
+    background-color: whitesmoke;
+    color: blue;
+    text-align: center;
 }
 
 .ex5__input::placeholder {
@@ -101,8 +133,40 @@ h3 {
     box-shadow: -5px 5px 25px 5px crimson;
 }
 
+.ex6__input::-webkit-input-placeholder {
+    color: crimson;
+}
+
+.ex6__input::-moz-placeholder {
+    color: crimson;
+}
+
+.ex6__input:-ms-input-placeholder {
+    color: crimson;
+}
+
+.ex6__input::-ms-input-placeholder {
+    color: crimson;
+}
+
 .ex6__input::placeholder {
     color: crimson;
+}
+
+.ex6__input:focus::-webkit-input-placeholder {
+    color: white;
+}
+
+.ex6__input:focus::-moz-placeholder {
+    color: white;
+}
+
+.ex6__input:focus:-ms-input-placeholder {
+    color: white;
+}
+
+.ex6__input:focus::-ms-input-placeholder {
+    color: white;
 }
 
 .ex6__input:focus::placeholder {
@@ -160,7 +224,7 @@ input[type=checkbox]+label::after {
     height: 10px;
     width: 10px;
     margin-left: 5px;
-    border: 1px solid grey;
+    border: 1px solid rgba(190, 169, 169, 0.404);
 }
 
 input[type=checkbox]:checked+label::after {
@@ -181,7 +245,7 @@ input[type=radio]+label::after {
     width: 10px;
     margin-left: 5px;
     border-radius: 50%;
-    border: 1px solid grey;
+    border: 1px solid rgba(255, 231, 231, 0.171);
 }
 
 input[type=radio]:checked+label::after {
