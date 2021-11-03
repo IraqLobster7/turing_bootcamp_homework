@@ -1,8 +1,8 @@
 body {
     display: grid;
     grid-template-areas: "header menu menu menu" "hero hero hero hero" "main main . extra" "main main . image" "banner banner banner banner";
-    grid-template-rows: 0.5fr 3fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 3fr repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     height: 100vh;
     margin: 0;
 }
@@ -10,7 +10,7 @@ body {
 @media all and (max-width: 960px) {
     body {
         grid-template-areas: "header header header" "hero hero hero" "menu main main" "menu banner banner" "menu extra image";
-        grid-template-rows: 0.5fr 1.5fr 1.5fr 1fr 1fr;
+        grid-template-rows: 0.5fr repeat(2, 1.5fr) repeat(2, 1fr);
         grid-template-columns: 1fr 2fr 1fr;
     }
 }
@@ -18,7 +18,7 @@ body {
 @media all and (max-width: 575px) {
     body {
         grid-template-areas: "header" "menu" "hero" "main" "banner" "extra" "image";
-        grid-template-rows: 1fr 1fr 2.5fr 2.5fr 1.5fr 1.5fr 1.5fr;
+        grid-template-rows: repeat(2, 1fr) repeat(2, 2.5fr) repeat(3, 1.5fr);
         grid-template-columns: 1fr;
         grid-gap: 0;
     }
