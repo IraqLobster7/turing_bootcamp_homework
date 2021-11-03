@@ -1,0 +1,453 @@
+h3 {
+    font-weight: 600;
+    margin: 15px;
+}
+
+
+/* Упражнение 1 */
+
+.triangle {
+    width: 0;
+    height: 0;
+    margin: 10px;
+    display: inline-block;
+}
+
+.left {
+    border-right: 100px black solid;
+    border-bottom: 50px transparent solid;
+    border-top: 50px transparent solid;
+}
+
+.right {
+    border-left: 100px black solid;
+    border-bottom: 50px transparent solid;
+    border-top: 50px transparent solid;
+}
+
+.top {
+    border-bottom: 100px black solid;
+    border-left: 50px transparent solid;
+    border-right: 50px transparent solid;
+}
+
+.bottom {
+    border-top: 100px black solid;
+    border-left: 50px transparent solid;
+    border-right: 50px transparent solid;
+}
+
+
+/* Упражнение 2 */
+
+.ex2__text {
+    margin: 15px;
+    width: 500px;
+}
+
+.ex2__text::first-letter {
+    color: blue;
+    font-size: larger;
+    font-weight: 900;
+}
+
+
+/* Упражнение 3 */
+
+.ex3__text {
+    margin: 15px;
+    padding: 5px;
+    width: 500px;
+    border-top: 1px solid #000;
+}
+
+.ex3__text::first-line {
+    font-style: italic;
+}
+
+
+/* Упражнение 4 */
+
+.ex__text_one::-moz-selection {
+    background-color: blue;
+}
+
+.ex__text_one::selection {
+    background-color: blue;
+}
+
+.ex__text_two::-moz-selection {
+    background-color: red;
+}
+
+.ex__text_two::selection {
+    background-color: red;
+}
+
+
+/* Упражнение 5 */
+
+.ex5__input {
+    margin: 15px;
+}
+
+.ex5__input::-webkit-input-placeholder {
+    background-color: whitesmoke;
+    color: blue;
+    text-align: center;
+}
+
+.ex5__input::-moz-placeholder {
+    background-color: whitesmoke;
+    color: blue;
+    text-align: center;
+}
+
+.ex5__input:-ms-input-placeholder {
+    background-color: whitesmoke;
+    color: blue;
+    text-align: center;
+}
+
+.ex5__input::-ms-input-placeholder {
+    background-color: whitesmoke;
+    color: blue;
+    text-align: center;
+}
+
+.ex5__input::placeholder {
+    background-color: whitesmoke;
+    color: blue;
+    text-align: center;
+}
+
+
+/* Упражнение 6 */
+
+.ex6__input {
+    margin: 15px;
+    width: 550px;
+    text-align: center;
+    border: none;
+    border-radius: 25px;
+    box-shadow: -5px 5px 25px 5px crimson;
+}
+
+.ex6__input::-webkit-input-placeholder {
+    color: crimson;
+}
+
+.ex6__input::-moz-placeholder {
+    color: crimson;
+}
+
+.ex6__input:-ms-input-placeholder {
+    color: crimson;
+}
+
+.ex6__input::-ms-input-placeholder {
+    color: crimson;
+}
+
+.ex6__input::placeholder {
+    color: crimson;
+}
+
+.ex6__input:focus::-webkit-input-placeholder {
+    color: white;
+}
+
+.ex6__input:focus::-moz-placeholder {
+    color: white;
+}
+
+.ex6__input:focus:-ms-input-placeholder {
+    color: white;
+}
+
+.ex6__input:focus::-ms-input-placeholder {
+    color: white;
+}
+
+.ex6__input:focus::placeholder {
+    color: white;
+}
+
+
+/* Упражнение 7-8 */
+
+.ex3 .ex__text_one::before {
+    content: "▶ Абзац 1 ";
+    font-style: normal;
+}
+
+.ex3 .ex__text_two::before {
+    content: "▶ Абзац 2 ";
+    font-style: normal;
+}
+
+
+/* Упражнение 9 */
+
+ol {
+    padding-left: 35px;
+    list-style: decimal;
+}
+
+.ex9__list__item:nth-child(4) {
+    color: blue;
+    font-size: 25px;
+}
+
+
+/* Упражнение 10 */
+
+.ex10__list__item:nth-child(odd) {
+    color: blue;
+    font-size: 25px;
+}
+
+
+/* Упражнение 11 */
+
+.ex11_check {
+    margin: 15px;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox]+label::after {
+    display: inline-block;
+    content: "";
+    height: 10px;
+    width: 10px;
+    margin-left: 5px;
+    border: 1px solid rgba(190, 169, 169, 0.404);
+}
+
+input[type=checkbox]:checked+label::after {
+    background-color: red;
+}
+
+
+/* Упражнение 12 */
+
+input[type=radio] {
+    display: none;
+}
+
+input[type=radio]+label::after {
+    display: inline-block;
+    content: "";
+    height: 10px;
+    width: 10px;
+    margin-left: 5px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 231, 231, 0.171);
+}
+
+input[type=radio]:checked+label::after {
+    background-color: red;
+}
+
+
+/* Упражнение 13 */
+
+.ex13__alltext {
+    margin: 15px;
+    width: 400px;
+}
+
+.ex13__head {
+    margin: inherit;
+    font-size: larger;
+    font-weight: 700;
+}
+
+.ex13__text {
+    margin: inherit;
+}
+
+.ex13__text:nth-of-type(2) {
+    color: red;
+}
+
+
+/* Упражнение 14 */
+
+.ex14__list__item:not(:first-child) {
+    color: red;
+}
+
+
+/* Упражнение 15 */
+
+.ex15__scroll {
+    overflow-y: scroll;
+    width: 300px;
+    height: 200px;
+}
+
+.ex15__scroll__inside {
+    height: 500px;
+}
+
+.ex15__scroll::-webkit-scrollbar {
+    background-color: red;
+}
+
+.ex15__scroll::-webkit-scrollbar-thumb {
+    background-color: cornsilk;
+}
+
+
+/* Упражнение 16 */
+
+.ex16__scroll {
+    display: inline-block;
+    overflow-y: scroll;
+    width: 100px;
+    height: 200px;
+    margin-bottom: 80px;
+}
+
+.ex16__scroll__inside {
+    height: 500px;
+}
+
+.ex16__scroll::-webkit-scrollbar {
+    width: 12px;
+    background-color: #f4f4f4;
+    border: 1px solid #dddddd;
+}
+
+.ex16__scroll::-webkit-scrollbar-thumb {
+    height: 80%;
+}
+
+.ex16__scroll_red::-webkit-scrollbar {
+    border-radius: 10px;
+}
+
+.ex16__scroll_red::-webkit-scrollbar-thumb {
+    background-color: red;
+    border-radius: 10px;
+}
+
+.ex16__scroll_blackthin::-webkit-scrollbar {
+    width: 6px;
+    background-color: rgb(207, 205, 205);
+    border: 1px solid rgb(207, 205, 205);
+}
+
+.ex16__scroll_blackthin::-webkit-scrollbar-thumb {
+    background-color: black;
+}
+
+.ex16__scroll_oceanblue::-webkit-scrollbar {
+    background-color: white;
+    border: 1px solid rgb(207, 205, 205);
+}
+
+.ex16__scroll_oceanblue::-webkit-scrollbar-thumb {
+    background: linear-gradient(#33baf1 50%, #00abed 50%);
+}
+
+.ex16__scroll_orange::-webkit-scrollbar {
+    background-color: white;
+    border: 1px solid rgb(207, 205, 205);
+}
+
+.ex16__scroll_orange::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #fe9900 25%, #fd6602 25%, #fd6602 50%, #fe9900 50%, #fe9900 75%, #fd6602 75%);
+}
+
+.ex16__scroll_bluegrad::-webkit-scrollbar {
+    background-color: white;
+    border: 1px solid rgb(207, 205, 205);
+    border-radius: 10px;
+}
+
+.ex16__scroll_bluegrad::-webkit-scrollbar-thumb {
+    background: linear-gradient(#1c3994 2%, #7b98d6);
+    border-radius: 10px;
+}
+
+.ex16__scroll_black::-webkit-scrollbar {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.ex16__scroll_black::-webkit-scrollbar-thumb {
+    background-color: black;
+}
+
+.ex16__scroll_orangegrad::-webkit-scrollbar {
+    background-color: white;
+    border: 1px solid rgb(207, 205, 205);
+    box-shadow: 0px 0px 3px 2px rgba(142, 168, 188, 0.2);
+}
+
+.ex16__scroll_orangegrad::-webkit-scrollbar-thumb {
+    background: linear-gradient( #ffad34 25%, #fe9900 25%, #fe9900 50%, #ffad34 50%, #ffad34 75%, #fe9900 75%);
+}
+
+.ex16__scroll_grey::-webkit-scrollbar {
+    background-color: white;
+    border: 1px solid rgb(207, 205, 205);
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 2px rgba(142, 168, 188, 0.2);
+}
+
+.ex16__scroll_grey::-webkit-scrollbar-thumb {
+    background: linear-gradient( #aaaaaa 25%, #888888 25%, #888888 50%, #aaaaaa 50%, #aaaaaa 75%, #888888 75%);
+    border-radius: 10px;
+}
+
+.ex16__scroll_bluevert::-webkit-scrollbar {
+    background-color: white;
+    border: 1px solid rgb(207, 205, 205);
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 2px rgba(142, 168, 188, 0.2);
+}
+
+.ex16__scroll_bluevert::-webkit-scrollbar-thumb {
+    background: repeating-linear-gradient( to left, blue 50%, rgb(93, 176, 231));
+    border-radius: 10px;
+}
+
+.ex16__scroll_blood::-webkit-scrollbar {
+    background-color: rgb(150, 146, 146);
+    border: 1px solid rgb(46, 42, 42);
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 2px rgba(142, 168, 188, 0.2);
+}
+
+.ex16__scroll_blood::-webkit-scrollbar-thumb {
+    background: radial-gradient(rgb(63, 7, 7) 5%, red);
+    border-radius: 10px;
+}
+
+.ex16__scroll_greygrad::-webkit-scrollbar {
+    background-color: white;
+    border: 1px solid rgb(207, 205, 205);
+    box-shadow: 0px 0px 3px 2px rgba(142, 168, 188, 0.2);
+}
+
+.ex16__scroll_greygrad::-webkit-scrollbar-thumb {
+    background: linear-gradient(white 5%, black);
+}
+
+.ex16__scroll_green::-webkit-scrollbar {
+    background-color: white;
+    border-radius: 10px;
+    /* border: 1px solid rgb(207, 205, 205); */
+    box-shadow: 0px 0px 3px 2px rgba(142, 168, 188, 0.2) inset;
+}
+
+.ex16__scroll_green::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: radial-gradient(rgb(49, 247, 82) 5%, rgb(2, 163, 88));
+}
