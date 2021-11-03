@@ -1,0 +1,313 @@
+h3 {
+    font-weight: 600;
+    margin: 15px;
+}
+
+
+/* Упражнение 1 */
+
+.ex1__container {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+.ex1__container__item {
+    display: inherit;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+}
+
+
+/* Упражнение 2 */
+
+.ex2__container {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ex2__container__item {
+    display: inherit;
+    flex: 1 0 auto;
+    margin: 5px;
+    height: 50px;
+    background-color: red;
+}
+
+.ex2__container__item:last-child {
+    flex: 2 0 auto;
+}
+
+
+/* Упражнение 3 */
+
+.ex3__container {
+    height: 200px;
+    width: 100;
+    display: flex;
+    background-color: black;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ex3__container__item {
+    display: inherit;
+    flex: 1 0 auto;
+    margin: 5px;
+    height: 50px;
+    background-color: red;
+}
+
+.ex3__container__item:nth-child(2) {
+    flex: 0.5 0 auto;
+}
+
+
+/* Упражнение 4 */
+
+.ex4 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    color: #000000;
+}
+
+.ex4__container {
+    width: 100%;
+    display: flex;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ex4__container__item {
+    display: inherit;
+    margin: 25px;
+    height: 200px;
+    width: 250px;
+    background: #C4C4C4;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.ex4__container__item .item__image {
+    background: #DDDDDD;
+    text-align: center;
+    width: 189px;
+    height: 120px;
+    font-size: 12px;
+    line-height: 120px;
+    margin: 22px 30px 10px;
+}
+
+.ex4__container__item .item__text {
+    background: #DDDDDD;
+    font-size: 8px;
+    width: 139px;
+    height: 12px;
+    line-height: 12px;
+    margin: 0 30px 7px;
+}
+
+.ex4__container__item .item__btn {
+    background: #BB0000;
+    font-size: 8px;
+    width: 188px;
+    height: 14px;
+    line-height: 14px;
+    margin: 0 30px 18px;
+}
+
+
+/* Упражнение 5 */
+
+.ex5__container {
+    display: flex;
+    justify-content: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: #000000;
+}
+
+.ex5__modal {
+    display: flex;
+    background: #C4C4C4;
+    justify-content: center;
+    align-items: center;
+    width: 723px;
+    height: 446px;
+    flex-wrap: wrap;
+    flex-flow: column;
+    justify-content: space-around;
+}
+
+.ex5__modal div {
+    text-align: center;
+}
+
+.ex5__modal .item__header {
+    width: 60%;
+    height: 48px;
+    margin: 35px auto 48px;
+    background: #DDDDDD;
+    line-height: 48px;
+}
+
+.ex5__modal .item__text {
+    width: 80%;
+    height: 175px;
+    background: #DDDDDD;
+    line-height: 178px;
+    margin: 0 auto 48px;
+}
+
+.ex5__modal .item__btn {
+    width: 60%;
+    height: 51px;
+    line-height: 51px;
+    background: #BB0000;
+    margin: 0 auto 41px;
+}
+
+
+/* Упражнение 6 */
+
+.ex6__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.ex6__header {
+    display: flex;
+    width: 80%;
+    border-radius: 2%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: #f2f2f2;
+}
+
+.ex6__header .header__logo {
+    padding-left: 4%;
+}
+
+.ex6__header .header__menu {
+    flex: 3 0 auto;
+    justify-content: flex-end;
+}
+
+.ex6__header .header__menu ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    flex-flow: wrap;
+    margin: 2%;
+}
+
+.ex6__header .header__menu ul li {
+    margin: 4% 2%;
+}
+
+.ex6__header .header__menu ul li a {
+    text-decoration: none;
+    color: #5a5a5a;
+}
+
+.ex6__header .header__btn {
+    padding-right: 4%;
+}
+
+.ex6__header .header__btn button {
+    color: #fff;
+    background: #407fe6;
+    border: none;
+    height: 45px;
+    width: 100px;
+    margin: 25px
+}
+
+
+/* Упражнение 7 */
+
+.ex7__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: black;
+    color: white;
+    margin: 0 auto;
+    flex-flow: wrap;
+}
+
+.ex7__first {
+    flex-direction: row;
+    width: 100%;
+    margin: 0 2px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: nowrap;
+}
+
+.ex7__first div {
+    background-color: grey;
+    margin: 1px;
+    display: flex;
+    height: 120px;
+}
+
+.item_one {
+    flex: 1 0 45%;
+}
+
+.item_two {
+    flex: 1 2 25%;
+}
+
+.item_three {
+    flex: 5 1 30%;
+}
+
+.ex7__second {
+    display: flex;
+    align-items: space-between;
+    width: 100%;
+    margin: 0 2px;
+}
+
+.ex7__second div {
+    margin: 1px;
+    display: flex;
+}
+
+.ex7__second__item {
+    flex: 0 0 25%;
+    height: 250px;
+    background-color: grey
+}
+
+.ex7__second__col {
+    flex-direction: column;
+    display: flex;
+    flex-grow: 1;
+    margin: 1px;
+}
+
+.col__item {
+    background-color: grey;
+    margin: 1px;
+    flex: 0 0 49%;
+}
