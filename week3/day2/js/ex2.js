@@ -10,8 +10,8 @@ showMessage(firstName, lastName);
 
 // Упражнениe 2
 
-let firstNum = prompt();
-let secNum = prompt();
+let firstNum = parseInt(prompt());
+let secNum = parseInt(prompt());
 
 function compare(a, b) {
     if (a > b) {
