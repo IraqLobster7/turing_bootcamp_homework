@@ -1,6 +1,3 @@
-<<<<<<< Updated upstream
-// Упражнениe 1
-=======
 // Упражнениe 1 Создайте объект вида { a: ‘a’, b: ‘b’, c: ‘c’ }. Выведите на экран значение в поле a двумя способами: через квадратные скобки и как свойство объекта
 
 let exOneObj = {
@@ -118,4 +115,3 @@ console.log(findInd([1, 3, 45, 45, 23, 746, 213, 325, 77, 3, 4, 74, 32, 43], 746
 
 let arrExTen = Array.from(Array(2), () => new Array(4));
 console.log(arrExTen);
->>>>>>> Stashed changes
