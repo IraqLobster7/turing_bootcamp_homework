@@ -110,7 +110,6 @@
 
 // console.log(findInd([1, 3, 45, 45, 23, 746, 213, 325, 77, 3, 4, 74, 32, 43], 746));
 
-
 // Упражнение 10 Создайте двумерный массив чисел, заполните его случайными числами от 0 до 10 и выведите его в консоль в виде таблицы
 
 let arrExTen = [];
@@ -166,3 +165,74 @@ let sumAllNum = [1, 2, 3, 4, 5].reduce((a, b) => a + b, 0);
 console.log(sumAllNum);
 
 //Упражнение 14 Реализуйте функцию, которая создаёт новый объект с заданным набором полей и с другим объектом в качестве прототипа
+
+//Упражнение 15 Реализуйте функцию, которая объединяет все массивы, являющиеся частью другого массива в один массив
+
+//Упражнение 16 Что вернут следующие выражения:
+// [] + [] перевод 2х массивов в строку
+// [10] + [1] конкатенация
+// [] - [] = 0 
+// +[] = 0
+// +{} = Nan type number
+// {} + {} string
+// {} - {} = Nan type number
+// !{} false
+// [] == [] false
+// {} === {} false
+// Проверьте свои догадки
+
+//Упражнение 17 Используя деструктурирующее присваивание создать на основе объекта { firstName: “Иван”, lastName: “Иванов”,  years: 25 } переменные с названиями name и age, в который записать данные из полей firstName и years
+let objExSeventeen = {
+    firstName: "Иван",
+    lastName: "Иванов",
+    years: 25,
+}
+
+let nameOb = objExSeventeen.firstName;
+let age = objExSeventeen.years;
+console.log(nameOb + " " + age);
+
+//Упражнение 18 Создайте массив со списком строк “Понедельник”, “Вторник”, ”Среда”. С помощью деструктурирующего присваивания вынесите эти названия в отдельные переменные
+let attExEighTeen = ["Понедельник", "Вторник", "Среда"];
+
+let [mond, tues, wedn] = attExEighTeen;
+console.log(mond + " " + tues + " " + wedn);
+
+//Упражнение 19 Поменяйте две переменные с помощью деструктуризации массивов
+let attExNineTeenFirst = ["Понедельник", "Вторник", "Среда"];
+let attExNineTeenSec = ["Monday", "Tuesday", "Wednesday"];
+
+[attExNineTeenFirst[0], attExNineTeenSec[0]] = [attExNineTeenSec[0], attExNineTeenFirst[0]];
+
+console.log(attExNineTeenSec);
+console.log(attExNineTeenFirst);
+
+//Упражнение 20 Отсортируйте массив чисел по возрастанию используя метод sort
+function sortNumExTwenty(arr) {
+    return arr.sort((a, b) => a - b);
+}
+
+console.log(sortNumExTwenty([1, 643, -23, 235, 64, 0, -23, -436, 3, 124, 36]));
+//Упражнение 21 Напишите функцию добавления в массив нового элемента по индексу предыдущего элемента.
+
+let exTwenOneArr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+
+function replace(index, varible) {
+    exTwenOneArr.splice(index, 0, varible);
+    console.log(exTwenOneArr);
+}
+replace(4, "test");
+
+//Упражнение 22 Напишите функции, реализующие поверхностное клонирование массива и объекта
+function copy(objec) {
+    let newobj = {...objec };
+    return newobj;
+}
+
+// console.log(exTwenOneArr);
+console.log(copy(exTwenOneArr));
+//Упражнение 23 Даны два массива: ['a', 'b', 'c'] и [1, 2, 3]. Объедините их вместе.
+let exArrTwThOne = ['a', 'b', 'c'];
+let exArrTwThTwo = [1, 2, 3];
+let exArrTwThUnion = exArrTwThOne.concat(exArrTwThTwo);
+console.log(exArrTwThUnion);
