@@ -1,0 +1,19 @@
+.styleClass {
+    font-size: 56px;
+}
+
+#customId {
+    background: blueviolet;
+}
+
+.main_containter {
+    width: 250px;
+    background: tomato;
+    height: 250px;
+}
+
+.exSeven {
+    width: 250px;
+    background: tomato;
+    height: 250px;
+}
