@@ -75,8 +75,8 @@ const ru = ["Понедельник", "Вторник", "Среда", "Четв�
 let colMapExEight = new Map();
 
 function setExEight(a, b) {
-    for (i = 0; i < a.length; i++) {
-        for (j = 0; j < b.length; j++) {
+    for (let i = 0; i < a.length; i++) {
+        for (let j = 0; j < b.length; j++) {
             colMapExEight.set(b[i], a[i]);
         }
     }
