@@ -1,27 +1,25 @@
 // Упражнение 1 Добавьте на страницу элемент div, установите ему класс container. Найдите этот элемент в DOM по классу как посредством getElementsByClassName. так и с помощью querySelector. Повторите тот же процесс но установив другой элемент div с атрибутом id равным main_containter
 
-document.querySelector("container");
+const container = document.querySelector(".container");
 document.getElementsByClassName("container");
 
-document.querySelector("main_containter");
-document.getElementsByClassName("main_containter");
+document.querySelector("#main_containter");
+document.getElementById("main_containter");
 
 // Упражнение 2 Создать div и стилизовать его динамически в js коде. Для этого:
 // a) Используйте свойство className
 // b) Используйте свойство classList
 // c)Установив id элемента
-
-let elem = document.getElementsByClassName("container")[0].setAttribute("style", "width:700px;height:500px;color:red;")
-
-
-let elemSecond = document.querySelector("div");
-let classNames = elemSecond.classList;
-
-classNames.add("styleClass");
-elemSecond.id = "customId";
+const randomDiv = document.createElement('div');
+randomDiv.className = 'randomNameForClass';
+randomDiv.classList.add('styleClass');
+randomDiv.id = "customId";
+container.append(randomDiv);
 
 // Упражнение 3 Создайте div с заданной шириной и измените ему стили используя свойство style. Чем этот способ отличается от стилизации с помощью установки классов и id?
-let elemExThree = document.getElementsByClassName("main_containter")[0].setAttribute("style", "width:100px;height:100px;background-color:pink;");
+const secondRandomDiv = document.createElement('div');
+secondRandomDiv.setAttribute("style", "width : 50px; height : 50px; background: red; font-size: 100px; font-style: italic; color:#ff0000;");
+randomDiv.append(secondRandomDiv);
 //  как я понимаю свойства стиля прописываются в html через style и они приоритетны перед тем что указано в файле css. а через id и установку класса мы будем использовать стили указанные в css файле.
 
 // Упражнение 4 Создайте список из 10 элементов и в JavaScript коде измените стиль каждого второго элемента таким образом, чтобы текст элемента стал жирным, а цвет фона серым
@@ -49,7 +47,7 @@ inpSix("exSix");
 // Упражнение 7 Добавьте элементу div в качестве потомков два элемента span с произвольным текстовым содержимым
 let exSeven = document.getElementsByClassName("exSeven");
 console.log(exSeven);
-for (i = 0; i < 2; i++) {
+for (let i = 0; i < 2; i++) {
     exSeven[0].insertAdjacentHTML("beforeEnd", "<span>some text</span><br>");
 }
 // Упражнение 8 Реализуйте функцию, которая в качестве параметров принимает id элемента и строку, которую устанавливает в качестве текста в этом элементе. Для реализации используйте:
