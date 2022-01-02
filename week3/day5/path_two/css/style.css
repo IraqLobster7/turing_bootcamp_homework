@@ -1,0 +1,54 @@
+#display {
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    font-weight: 800;
+    font-size: large;
+    background: tomato;
+}
+
+#long {
+    height: 3200px;
+    width: 100%;
+    background: cyan;
+}
+
+#stick {
+    background: yellow;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+}
+
+#numbers {
+    margin: 30px;
+}
+
+.numb {
+    min-width: 50px;
+    min-height: 50px;
+    border: 1px rgb(219, 233, 22) dotted;
+    color: rgb(219, 233, 22);
+    background: purple;
+    line-height: 50px;
+}
+
+#delete {
+    display: block;
+    width: 300px;
+    margin: 10px;
+    height: 50px;
+}
+
+.arr {
+    display: block;
+}
+
+.arr_item {
+    margin: 10px 25px;
+    height: 50px;
+    width: 100px;
+    border: 1px red solid;
+    text-align: center;
+    line-height: 50px;
+}

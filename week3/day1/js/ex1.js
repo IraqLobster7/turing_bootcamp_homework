@@ -49,19 +49,12 @@ if (Number.parseInt(numEvenNotEven) % 2 === 0) {
 //Упражнение 9
 let arrEx = { a: 1 };
 
-<<<<<<< Updated upstream
-console.log(11);
-console.log("Hello");
-console.log(arrEx);
-console.log(null);
-console.log(false);
-=======
 console.log(typeof(11));
 console.log(typeof("Hello"));
 console.log(typeof(arrEx));
 console.log(typeof(null));
 console.log(typeof(false));
->>>>>>> Stashed changes
+
 
 //Упражнение 10
 
@@ -86,8 +79,5 @@ if (log !== userLog && pass !== userPass) { //можно было не писа�
 // Упражнение 11
 
 let aBol = '30';
-<<<<<<< Updated upstream
-alert(!aBol);
-=======
+
 alert(!!aBol);
->>>>>>> Stashed changes
