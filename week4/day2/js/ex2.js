@@ -1,5 +1,5 @@
 // Упражнение 1 Выведите на странице часы
-let time = document.getElementById('time');
+let time = document.querySelector('#time');
 setInterval(() => time.innerHTML = new Date(), 1000);
 // Упражнение 2 Выведите на странице данные о количестве секунд, оставшихся до конца дня. Данные должны обновляться динамически
 
@@ -14,7 +14,7 @@ function secondsToEnd() {
     return result;
 }
 
-let timeToEnd = document.getElementById('time_to_end');
+let timeToEnd = document.querySelector('#time_to_end');
 setInterval(() => timeToEnd.innerHTML = secondsToEnd(), 1000);
 
 // Упражнение 3 Выведите на странице инпут и кнопку. В инпут вводится число. По нажатию на кнопку запускается таймер с количеством секунд, равным числу, введенному пользователем
@@ -22,7 +22,7 @@ setInterval(() => timeToEnd.innerHTML = secondsToEnd(), 1000);
 let start = 0;
 
 function timerPoint() {
-    var startPoint = parseInt(document.getElementById('number').value) + 1;
+    const startPoint = parseInt(document.querySelector('#number').value) + 1;
     start = startPoint;
     startTime();
 }
@@ -34,11 +34,11 @@ function startTime() {
         clearTimeout(start);
     } else {
         setTimeout(startTime, 1000);
-        document.getElementById('timer').innerHTML = start;
+        document.querySelector('#timer').innerHTML = start;
     }
 };
 
-document.getElementById('timer').innerHTML = start;
+document.querySelector('#timer').innerHTML = start;
 
 // Упражнение 4 Реализуйте функцию, которая возвращает случайное число в диапазоне от первого переданного в неё параметра до второго
 function minMax(min, max) {
@@ -48,13 +48,19 @@ function minMax(min, max) {
 
 // Упражнение 5 Создайте промис, который успешно выполнится через 3 секунды
 const randomNumber = minMax(55, 345);
-const promise = new Promise((resolve,
-    setTimeout(() => console.log(randomNumber), 3000)
-));
-
-
+const promise = new Promise((resolve) => {
+    setTimeout(() => {
+        resolve(console.log(`случайное число: ${randomNumber}`));
+    }, 3000);
+});
 // Упражнение 6 Создайте промис, который завершится с ошибкой через 3 секунды
-
+const secondPromise = new Promise((resolve, reject) => {
+    if (randomNumber > 10) {
+        reject('error');
+    } else {
+        resolve(`случайное число: ${randomNumber}`);
+    }
+});
 // Упражнение 7 Реализуйте функцию, возвращающую промис, в котором генерируется случайное число. Если это число оказывается больше 10 то промис должен завершиться с ошибкой.
 
 // Упражнение 8 Используя методы catch и then обработайте результаты вызова функции из упражнения 7
